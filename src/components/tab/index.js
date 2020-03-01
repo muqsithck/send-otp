@@ -7,10 +7,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-
 import HistoryIcon from '@material-ui/icons/History';
 import PersonIcon from '@material-ui/icons/Person';
-
 import Contact from '../contact'
 import History from '../history'
 
@@ -68,7 +66,7 @@ export default function FullWidthTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static" 
-      style={{backgroundColor:'#f1f1f1', minWidth:'100vw'}}
+      style={{backgroundColor:'#f1f1f1'}}
       
       >
         <Tabs
