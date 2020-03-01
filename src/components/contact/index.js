@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Grid } from "@material-ui/core";
 import contacts from "../data/contacts.json";
-import { sentOtpFunction, setHistory } from "../../redux/actions/action";
+import { sentOtpFunction, setHistory } from "../../Redux/actions/action";
 import './style.css'
 
 
