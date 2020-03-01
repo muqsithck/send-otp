@@ -3,6 +3,7 @@ import {Grid} from '@material-ui/core'
 import Tab from './components/tab'
 import { Provider } from "react-redux";
 import store from "./Redux/store";
+import './App.css'
 
 
 export default function App()

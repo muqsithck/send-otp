@@ -1,0 +1,10 @@
+.history-list-wrapper {
+    list-style-type: none;
+    width:100%;
+    background-color: #f1f1f1;
+    margin: 6px 4px !important; 
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}

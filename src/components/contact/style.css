@@ -1,5 +1,39 @@
-.contacts-list {
+.contacts-list-wrapper {
     list-style-type: none;
-    width:'100%'
+    width:100%;
+    background-color: #f1f1f1;
+    margin: 6px 4px !important; 
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.contact-button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contact-name-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-number-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.image-icons{
+    height: 20px;
+    width: 20px;
+    background-color: skyblue;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    
+    
 
 }

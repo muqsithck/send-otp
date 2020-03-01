@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 export const setHistory = (data) => {
+    console.log(data)
     return {
         type: 'ADD_HISTORY',
         payload: data

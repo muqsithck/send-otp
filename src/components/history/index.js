@@ -1,19 +1,24 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import {Grid} from "@material-ui/core"
+import './style.css'
 
 export default function Index() {
   const globalSate = useSelector(({ contact }) => contact);
   return (
-    <div>
+    <Grid>
       {globalSate.history.length > 0 ? (
-        <ul>
-          {globalSate.history.map(item => {
-            return <li>{item.sureName}</li>;
-          })}
-        </ul>
+        
+          globalSate.history.map((item, index ) => {
+            return <Grid item md={12}   className="history-list-wrapper" key={index}>
+              <p  className="contact-name"> {item.sureName} </p>  
+              <p  className="contact-name"> {item.time} </p>  
+              </Grid>
+          })
+       
       ) : (
         <div>noting...</div>
       )}
-    </div>
+    </Grid>
   );
 }

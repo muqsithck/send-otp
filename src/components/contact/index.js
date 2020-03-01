@@ -4,14 +4,14 @@ import { Grid } from "@material-ui/core";
 import contacts from "../data/contacts.json";
 import { sentOtpFunction, setHistory } from "../../Redux/actions/action";
 import './style.css'
+import More from '@material-ui/icons/MoreVert';
+
 
 
 export default function App() {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    // dispatch(senOtpFunction())
-  }, [dispatch]);
+
 
   const globalSate = useSelector(({ contact }) => contact);
 
@@ -27,14 +27,21 @@ export default function App() {
     // alert(`OTP for ${n} is ${otp}`)
 
     // dispatch(sentOtpFunction(n));
-    dispatch(setHistory(data));
-     
 
+    var dateWithouthSecond = new Date();
+  var date = dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+  
+
+    var fullData = { ...data, time:date }
+
+
+    dispatch(setHistory(fullData));
+     
+  
 
   };
 
   
-  console.log("history", globalSate.history)
 
   return (
     <div
@@ -42,31 +49,48 @@ export default function App() {
     >
       {globalSate ? (
         <Grid container >
-          <ul>
+         
             {contacts.map( (item, index) => {
               return (
-                <li key={index}
-                className="contacts-list"
+                <Grid item md={12} key={index}
+                className="contacts-list-wrapper"
                 >
-                  {item.sureName} : {item.number}
+                  <Grid container >
+                  <Grid item md={4} xs={12}
+                  className="contact-name-wrapper"
+                  >
+                  <p className="contact-name"> {item.sureName} </p>
+                  </Grid>
+                  <Grid item md={4} xs={6}
+                  className="contact-number-wrapper"
+                  
+                 > 
+                   <p  className="contact-number">{item.number} </p>
+                   </Grid>
+                   <Grid item md={4} xs={6}
+                   className="contact-button-wrapper"
+                   >
                   <button
+                  className='primary-button'
                     onClick={() => {
                       sendOtp(item);  
                     }}
                   >
                     Send Otp
                   </button>
-                  <button
-                  >
-                   Details
-                  </button>
-                </li>
+                
+                  <More 
+                   className="icon-button"
+                  />
+                  </Grid> 
+                  </Grid>
+                </Grid>
               );
             })}
-          </ul>
+         
         </Grid>
       ) : (
-        <div>loding</div>
+        <div>Loading</div>
       )}
     </div>
   );
