@@ -6,7 +6,7 @@ import { sentOtpFunction, setHistory, setCurrentContact } from "../../Redux/acti
 import "./style.css";
 import More from "@material-ui/icons/MoreVert";
 
-import User from './user'
+import UserInfo from './userinfo'
 
 export default function App() {
   const dispatch = useDispatch();
@@ -14,17 +14,9 @@ export default function App() {
   const globalSate = useSelector(({ contact }) => contact);
 
   const sendOtp = data => {
-    // let otp="889966"
-    // axios.get(`https://2factor.in/API/V1/ec15425d-5b0f-11ea-9fa5-0200cd936042/SMS/${n}/${otp}`).then(
-    //     res => {
-    //         console.log("res:" , res)
-    //     }
-    // )
-
-    // let otp = Math.floor(100000 + Math.random() * 900000)
-    // alert(`OTP for ${n} is ${otp}`)
-
-    // dispatch(sentOtpFunction(n));
+    let number = data.number
+     dispatch(sentOtpFunction(number));
+     
 
     var dateWithouthSecond = new Date();
     var date = dateWithouthSecond.toLocaleTimeString(navigator.language, {
@@ -99,7 +91,7 @@ export default function App() {
 
     
      <div className="contact-details-wrapper" id="details-wrapper">
-       <User  userInactiveHandler={userInactiveHandler} /> 
+       <UserInfo  userInactiveHandler={userInactiveHandler} sendOtp={sendOtp} /> 
      </div>
     </Grid>
   );

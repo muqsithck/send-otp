@@ -69,7 +69,7 @@ export default function FullWidthTabs() {
         
         
       <AppBar position="static" 
-      style={{backgroundColor:'#fdfff5',boxShadow:'none', borderRadius:'4px'}}
+      style={{backgroundColor:'#fafdff',boxShadow:'none', borderRadius:'4px'}}
       >
         <Tabs
           value={value}

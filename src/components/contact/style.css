@@ -1,10 +1,11 @@
 .contacts-list-wrapper {
     list-style-type: none;
     width:100%;
-    background-color: #fdfff5;
+    background-color: #fafdff;
     margin: 6px 4px !important; 
     padding: 15px;
     border-radius: 4px;
+
     z-index: 999;
 }
 
@@ -14,9 +15,10 @@
     align-items: center;
 }
 .contact-name-wrapper{
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; */
+    background-color: ;
 }
 .contact-number-wrapper{
     display: flex;
@@ -34,7 +36,7 @@
 
 .contact-details-wrapper{
     position: absolute;
-    background-color: #fdfff5;
+    background-color: #fafdff;
     top: 0;
     left: 0;
     width: 100%;
