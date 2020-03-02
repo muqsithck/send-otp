@@ -37,15 +37,22 @@ export default function App() {
     dispatch(setHistory(fullData));
   };
 
-  const optionHandle = (data) => {
+  const userActiveHandler = (data) => {
     dispatch(setCurrentContact(data));
+    window.scrollTo(0, 0); 
     document.getElementById("details-wrapper").style.opacity = 1;
     document.getElementById("details-wrapper").style.zIndex = 9999;
+    
+  };
 
+  const userInactiveHandler = () => {
+    window.scrollTo(0, 0); 
+    document.getElementById("details-wrapper").style.opacity = 0;
+    document.getElementById("details-wrapper").style.zIndex = 1;
   };
 
   return (
-    <Grid container>
+    <Grid container id="scroll">
       {globalSate ? (
         <Grid item md={12}>
           <Grid container>
@@ -76,7 +83,7 @@ export default function App() {
 
                       <More className="icon-button"
                       onClick={() => {
-                        optionHandle(item);
+                        userActiveHandler(item);
                       }}
                      />
                     </Grid>
@@ -92,7 +99,7 @@ export default function App() {
 
     
      <div className="contact-details-wrapper" id="details-wrapper">
-       <User /> 
+       <User  userInactiveHandler={userInactiveHandler} /> 
      </div>
     </Grid>
   );

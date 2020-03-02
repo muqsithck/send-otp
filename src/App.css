@@ -1,3 +1,10 @@
+.item-flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
 .contact-number{
   margin: 0px !important;
   color: #3F51B5;
@@ -47,6 +54,8 @@
  margin-right: 6px;
 }
 
+
+
 .primary-button:hover
 {
  border: 1px solid #e33371;
@@ -63,6 +72,22 @@
   color: #e33371;
 }
 
+
+.full-width-button{
+  border: 1px solid #3F51B5;
+ cursor: pointer;
+ background-color: #3F51B5;
+
+ font-family: 'Open Sans';
+ font-weight: 400;
+ font-size: 18px;
+ color: #fdfff5;
+ padding: 10px 20px;
+ 
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}
 
 
 @media only screen and (max-width: 900px) {

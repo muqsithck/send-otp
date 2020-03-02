@@ -16,7 +16,9 @@ export default function Index() {
           })
        
       ) : (
-        <div>noting...</div>
+        <Grid className="item-flex-center">
+         <p className="history-name" > No logs yet </p>
+                    </Grid>
       )}
     </Grid>
   );

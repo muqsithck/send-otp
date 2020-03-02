@@ -3,55 +3,65 @@
      "id":1,
      "firstName" : "Sachin",
      "sureName" : "Tendulkar",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/sachin@2x.png"
    },
    { "id":2,
      "firstName" : "Virendra",
      "sureName" : "Sehwag",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/sewag@2x.png"
    },
    {
     "id":3,
      "firstName" : "Sourav",
      "sureName" : "Ganguly",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/ganguly@2x.png"
    },
    { 
     "id":4,
      "firstName" : "Gaoutham",
      "sureName" : "Gambeer",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
    },
    {
     "id":5,
      "firstName" : "MS",
      "sureName" : "Dhoni",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/dhoni@2x.png"
    },
    {
     "id":6,
      "firstName" : "Yuvaraj",
      "sureName" : "Singh",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/yuvi@2x.png"
    },
    {
     "id":7,
      "firstName" : "Rahul",
      "sureName" : "Dravid",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/dravid@2x.png"
    },
    { 
     "id":8,
      "firstName" : "Virat",
      "sureName" : "Kohli",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
    },
 
    {
     "id":9,
      "firstName" : "Dinesh",
-     "sureName" : "Karthi",
-     "number" : "8606592135"
+     "sureName" : "Karthik",
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
+     
    },
    {
     "id":10,
@@ -63,27 +73,32 @@
     "id":11,
      "firstName" : "Ravindra",
      "sureName" : "Jaddeja",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
    },
    {
     "id":12,
      "firstName" : "Hardik",
      "sureName" : "Pandya",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
    },
    {"id":13,
      "firstName" : "Sanju",
      "sureName" : "Samson",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
    },
    {"id":14,
      "firstName" : "Munaf",
      "sureName" : "Pattel",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
    },
    {"id":15,
      "firstName" : "Japrit",
      "sureName" : "Bumbra",
-     "number" : "8606592135"
+     "number" : "8606592135",
+     "image":"images/india@2x.png"
    }
 ]
