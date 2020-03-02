@@ -7,6 +7,13 @@ export const setHistory = (data) => {
         payload: data
     }
 }
+export const setCurrentContact = (data) => {
+    return {
+        type: 'SET_CONTACT',
+        payload: data
+    }
+}
+
 
 export const sentOtpFunction = (data) =>
     (dispatch) => {

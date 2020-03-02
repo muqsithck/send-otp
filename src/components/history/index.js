@@ -8,11 +8,10 @@ export default function Index() {
   return (
     <Grid>
       {globalSate.history.length > 0 ? (
-        
           globalSate.history.map((item, index ) => {
             return <Grid item md={12}   className="history-list-wrapper" key={index}>
-              <p  className="contact-name"> {item.sureName} </p>  
-              <p  className="contact-name"> {item.time} </p>  
+              <p  className="history-name"> {item.sureName} </p>  
+              <p  className="history-time"> {item.time} </p>  
               </Grid>
           })
        

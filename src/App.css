@@ -1,26 +1,47 @@
 .contact-number{
   margin: 0px !important;
-  color: #3498db;
+  color: #3F51B5;
   font-family: 'Open Sans';
   font-weight: 600;
+  font-size: 14px;
+  cursor:context-menu;
+
 }
 .contact-name{
   margin: 0px !important;
-  color: #3498db;
+  color: #3F51B5;
   font-family: 'Open Sans';
   font-weight: 600;
+  font-size: 16px;
+  cursor:context-menu;
+}
+.history-name{
+  margin: 0px !important;
+  color: #3F51B5;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  cursor:context-menu;
+}
+.history-time{
+  margin: 0px !important;
+  color: #3F51B5;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 10px;
+  cursor:context-menu;
 }
 
-
 .primary-button{
- border: 1px solid #3498db;
+ border: 1px solid #3F51B5;
  border-radius: 4px;
  cursor: pointer;
+ background-color: #3F51B5;;
 
  font-family: 'Open Sans';
  font-weight: 400;
  font-size: 12px;
- color: #3498db;
+ color: #fdfff5;
  padding: 4px 7px;
 
  margin-right: 6px;
@@ -28,16 +49,28 @@
 
 .primary-button:hover
 {
- border: 1px solid #2ecc71;
-  background-color: #2ecc71;
+ border: 1px solid #e33371;
+  background-color: #e33371;
   color: #fff;
 }
 
 
 .icon-button{
-  color: #3498db;
+  color: #3F51B5;
   cursor: pointer;
 }
 .icon-button:hover {
-  color: #2ecc71;
+  color: #e33371;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    
+  
+.contact-name{
+  font-size: 20px;
+}  
+
+
 }

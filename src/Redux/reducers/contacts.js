@@ -1,7 +1,8 @@
 const initialState = {
     contacts:[],
     history: [],
-    loader: false
+    loader: false,
+    currentContact:{}
 }
 
 const familyReducer = (state = initialState, { type, payload }) => {
@@ -25,9 +26,13 @@ const familyReducer = (state = initialState, { type, payload }) => {
         }
     
         case 'ADD_HISTORY': {
-            console.log("redu")
             return {
                 ...state, history:  [...state.history, payload ],
+            }
+        }
+        case 'SET_CONTACT': {
+            return {
+                ...state, currentContact:  payload,
             }
         }
     

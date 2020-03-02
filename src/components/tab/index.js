@@ -65,9 +65,11 @@ export default function FullWidthTabs() {
 
   return (
     <div className={classes.root}>
+       
+        
+        
       <AppBar position="static" 
-      style={{backgroundColor:'#f1f1f1'}}
-      
+      style={{backgroundColor:'#fdfff5',boxShadow:'none', borderRadius:'4px'}}
       >
         <Tabs
           value={value}
@@ -76,6 +78,7 @@ export default function FullWidthTabs() {
           textColor="primary"
           variant="fullWidth"
           aria-label="full width tabs example"
+
         >
           <Tab  icon={<PersonIcon />}  label="CONTACTS"  {...a11yProps(0)} />
           <Tab  icon={<HistoryIcon />}  label="HISTORY" {...a11yProps(1)} />
