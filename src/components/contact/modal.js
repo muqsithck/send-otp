@@ -22,10 +22,9 @@ export default function AlertDialog(props) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"warring"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">{"warning"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-          Here i use 2Factro sms service(https://2factor.in) ,
           In 2factor sms server, Text messaging feature is supported over paid accounts only. 
           </DialogContentText>
         </DialogContent>
