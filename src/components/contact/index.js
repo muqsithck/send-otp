@@ -1,8 +1,9 @@
 import React from "react";
+import { sentOtpFunction, setHistory, setCurrentContact } from "../../Redux/actions/action";
 import { useSelector, useDispatch } from "react-redux";
 import { Grid } from "@material-ui/core";
 import contacts from "../data/contacts.json";
-import { sentOtpFunction, setHistory, setCurrentContact } from "../../Redux/actions/action";
+
 import "./style.css";
 import More from "@material-ui/icons/MoreVert";
 
