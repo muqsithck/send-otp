@@ -1,16 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import HistoryIcon from '@material-ui/icons/History';
-import PersonIcon from '@material-ui/icons/Person';
-import Contact from '../contact'
-import History from '../history'
+import React from "react";
+import PropTypes from "prop-types";
+import SwipeableViews from "react-swipeable-views";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
+import HistoryIcon from "@material-ui/icons/History";
+import PersonIcon from "@material-ui/icons/Person";
+import Textsms from "@material-ui/icons/Email";
+import Contact from "../contact";
+import History from "../history";
+import Message from "../message/index";
 
 
 function TabPanel(props) {
@@ -33,21 +35,21 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired
 };
 
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
-    'aria-controls': `full-width-tabpanel-${index}`,
+    "aria-controls": `full-width-tabpanel-${index}`
   };
 }
 
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 500,
-  },
+    width: 500
+  }
 }));
 
 export default function FullWidthTabs() {
@@ -65,11 +67,13 @@ export default function FullWidthTabs() {
 
   return (
     <div className={classes.root}>
-       
-        
-        
-      <AppBar position="static" 
-      style={{backgroundColor:'#fafdff',boxShadow:'none', borderRadius:'4px'}}
+      <AppBar
+        position="static"
+        style={{
+          backgroundColor: "#fafdff",
+          boxShadow: "none",
+          borderRadius: "4px"
+        }}
       >
         <Tabs
           value={value}
@@ -78,21 +82,24 @@ export default function FullWidthTabs() {
           textColor="primary"
           variant="fullWidth"
           aria-label="full width tabs example"
-
         >
-          <Tab  icon={<PersonIcon />}  label="CONTACTS"  {...a11yProps(0)} />
-          <Tab  icon={<HistoryIcon />}  label="HISTORY" {...a11yProps(1)} />
+          <Tab icon={<Textsms />} label="SMS" {...a11yProps(0)} />
+          <Tab icon={<PersonIcon />} label="CONTACTS" {...a11yProps(1)} />
+          <Tab icon={<HistoryIcon />} label="HISTORY" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={value}
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <Contact />
+          <Message />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
+          <Contact />
+        </TabPanel>
+        <TabPanel value={value} index={2} dir={theme.direction}>
           <History />
         </TabPanel>
       </SwipeableViews>

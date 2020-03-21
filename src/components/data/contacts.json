@@ -3,7 +3,7 @@
      "id":1,
      "firstName" : "Sachin",
      "sureName" : "Tendulkar",
-     "number" : "9810153260",
+     "number" : "8606592135",
      "image":"images/sachin@2x.png",
      "home":"(687) 587-11254",
      "location":"Delhi"
@@ -22,7 +22,7 @@
     "id":3,
      "firstName" : "Sourav",
      "sureName" : "Ganguly",
-     "number" : "9810153260",
+     "number" : "8606592135",
      "image":"images/ganguly@2x.png",
      "home":"(687) 587-11254",
      "location":"Delhi"
@@ -52,7 +52,7 @@
     "id":6,
      "firstName" : "Yuvaraj",
      "sureName" : "Singh",
-     "number" : "9810153260",
+     "number" : "8606592135",
      "image":"images/yuvi@2x.png",
      "home":"(687) 587-11254",
      "location":"Delhi"
@@ -72,7 +72,7 @@
     "id":8,
      "firstName" : "Virat",
      "sureName" : "Kohli",
-     "number" : "9810153260",
+     "number" : "8606592135",
      "image":"images/india@2x.png",
      "home":"(687) 587-11254",
      "location":"Delhi"
@@ -119,7 +119,7 @@
    {"id":13,
      "firstName" : "Sanju",
      "sureName" : "Samson",
-     "number" : "9810153260",
+     "number" : "8606592135",
      "image":"images/india@2x.png",
      "home":"(687) 587-11254",
      "location":"Delhi"
@@ -137,7 +137,7 @@
    {"id":15,
      "firstName" : "Japrit",
      "sureName" : "Bumbra",
-     "number" : "9810153260",
+     "number" : "8606592135",
      "image":"images/india@2x.png",
      "home":"(687) 587-11254",
      "location":"Delhi"

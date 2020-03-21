@@ -3,13 +3,10 @@ import { sentOtpFunction, setHistory, setCurrentContact } from "../../Redux/acti
 import { useSelector, useDispatch } from "react-redux";
 import { Grid } from "@material-ui/core";
 import contacts from "../data/contacts.json";
-
 import "./style.css";
 import More from "@material-ui/icons/MoreVert";
 
-import UserInfo from './userinfo'
-
-export default function App() {
+export default function  App() {
   const dispatch = useDispatch();
 
   const globalSate = useSelector(({ contact }) => contact);
@@ -30,19 +27,6 @@ export default function App() {
     dispatch(setHistory(fullData));
   };
 
-  const userActiveHandler = (data) => {
-    dispatch(setCurrentContact(data));
-    window.scrollTo(0, 0); 
-    document.getElementById("details-wrapper").style.opacity = 1;
-    document.getElementById("details-wrapper").style.zIndex = 9999;
-    
-  };
-
-  const userInactiveHandler = () => {
-    window.scrollTo(0, 0); 
-    document.getElementById("details-wrapper").style.opacity = 0;
-    document.getElementById("details-wrapper").style.zIndex = 1;
-  };
 
   return (
     <Grid container id="scroll">
@@ -74,11 +58,6 @@ export default function App() {
                         Send Otp
                       </button>
 
-                      <More className="icon-button"
-                      onClick={() => {
-                        userActiveHandler(item);
-                      }}
-                     />
                     </Grid>
                   </Grid>
                 </Grid>
@@ -91,9 +70,7 @@ export default function App() {
       )}
 
     
-     <div className="contact-details-wrapper" id="details-wrapper">
-       <UserInfo  userInactiveHandler={userInactiveHandler} sendOtp={sendOtp} /> 
-     </div>
+    
     </Grid>
   );
 }
